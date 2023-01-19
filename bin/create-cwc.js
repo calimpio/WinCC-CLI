@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 const { stdin, stdout, execPath, cwd } = require("process");
 const fs = require("fs");
