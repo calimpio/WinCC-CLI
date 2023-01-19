@@ -43,6 +43,7 @@ readline.question("Control Name: ", (value) => {
                             fs.copyFile(`${base}/Control/src/index.tsx`, `${root}/src/index.tsx`, () => { });
                             fs.copyFile(`${base}/Control/src/control.tsx`, `${root}/src/control.tsx`, () => { });                             
                         })
+                        readline.close();
                     });
                 } else {
                     console.log(`${data.name} cwc already exists.`);

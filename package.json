@@ -1,6 +1,6 @@
 {
   "name": "wincc-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "custom web control generator for WinCC ",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "bin":{
     "create-cwc": "./bin/create-cwc.js"
   },
+  "keywords": ["WinCC", "Unified", "Custom", "Web", "Control","TIA", "Portal", "typescript", "javascript","react", "CLI"],
   "author": "",
   "license": "ISC",
   "dependencies": {
