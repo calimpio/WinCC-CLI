@@ -1,10 +1,10 @@
 {
   "name": "wincc-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "custom web control generator for WinCC ",
   "main": "index.js",
   "scripts": {
-    "create-cwc": "node ./bin/create-cwc.js",
+    "create-cwc": "./bin/create-cwc.js",
     "test": ""
   },
   "bin":{
