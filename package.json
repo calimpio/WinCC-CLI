@@ -1,6 +1,6 @@
 {
   "name": "wincc-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "custom web control generator for WinCC ",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": ""
   },
   "bin":{
-    "create-cwc": "./bin/create-cwc.js"
+    "create-cwc": "node ./bin/create-cwc.js"
   },
   "author": "",
   "license": "ISC",
