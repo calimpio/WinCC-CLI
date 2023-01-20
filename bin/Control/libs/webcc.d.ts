@@ -1,38 +1,38 @@
 interface Properties {
-    //define props
+    //define properties
 }
 
-interface ControlAPI{
+interface Events {
+    //define events
+}
+
+interface ControlAPI {
     methods: {
         [name: string]: any
     },
     events: {
-        [name: string]: any
-    }, 
-    properties:{
-        [name: string]: any
+        [Event in keyof Events]: any
+    },
+    properties: {
+        [Prop in keyof Properties]: any
     }
 }
 
-interface Events {
-    subscribe: (data: any)=>void
+
+interface HMI {
+    Properties: Properties
 }
 
-interface Contract {
-    
+interface Extencions {
+    HMI: HMI,
+    Formatting: {},
+    Dialogues: {}
+    //define more eviroments extensions from TIA Portal
 }
 
 interface IWebCC {
-    start(callback: (connected: boolean)=>void, controlApi: ControlAPI, c: string[], timeout: number ): void
-    Properties: Properties,
-    onPropertyChanged: Events
+    start(callback: (connected: boolean) => void, controlApi: ControlAPI, c: string[], timeout: number): void
+    Extensions: Extencions
 }
-
-interface ControlInit{
-    ControlApi: ControlAPI
-}
-
 
 export declare const WebCC: IWebCC
-export declare const controlInit: ControlInit
-export declare const setProperty: (data:{key: string, value: any})=>void

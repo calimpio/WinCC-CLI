@@ -1,6 +1,6 @@
 module.exports = {
-content: (name, displayName, guid, author)=>
-`{
+    content: (name, displayName, guid, author) =>
+        `{
     "mver": "1.2.0",
     "control": {
         "identity": {
@@ -27,7 +27,24 @@ content: (name, displayName, guid, author)=>
         }
         },
         "types": {
+        },
+        "environment": {
+            "extensions": {
+            "HMI": {
+                "mandatory": true,
+                "version": "~1.0.0"
+            }
+            "Formatting": {
+                "mandatory": true,
+                "version": "~1.0.0"
+            }
+            "Dialogues": {
+                "mandatory": true,
+                "version": "~1.0.0"
+            }
+            }
         }
+           
     }
-}`    
+}`
 }

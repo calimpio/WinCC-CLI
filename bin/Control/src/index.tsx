@@ -1,16 +1,26 @@
 import * as React from "react";
-import { WebCC, controlInit, setProperty } from "../libs/webcc";
+import { WebCC } from "../libs/webcc";
 import {createRoot} from "react-dom/client"
 import { Control } from "./control";
 
 WebCC.start(
     (connected) => {
         if (connected) {            
-            WebCC.onPropertyChanged.subscribe(setProperty);
+
         }
     },
-    controlInit.ControlApi,
-    [],
+    {
+        events:{
+
+        },
+        methods:{
+
+        },
+        properties:{
+
+        }
+    },
+    ['HMI, Formatting, Dialogues'],
     10000
 )
 
