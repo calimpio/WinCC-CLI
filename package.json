@@ -1,6 +1,6 @@
 {
   "name": "wincc-cli",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "custom web control generator for WinCC ",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,9 @@
   },
   "bin":{
     "create-cwc": "./bin/create-cwc.js"
+  },
+  "repository": {
+    "url": "https://github.com/calimpio/WinCC-CLI.git"
   },
   "keywords": ["WinCC", "Unified", "Custom", "Web", "Control","TIA", "Portal", "typescript", "javascript","react", "CLI"],
   "author": "",

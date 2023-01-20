@@ -7,8 +7,10 @@ with nodejs `$ npm -g i wincc-cli`
 
 ## Usage
 
-- ### create new Custom Web Control in React with typescript project:
+- ### create new Custom Web Control in React with typescript and react project:
     `$ npx wincc-cli create-cwc`
+    `$ cd /<control name>`
+    `$ npm i`
 
 
 ## Author

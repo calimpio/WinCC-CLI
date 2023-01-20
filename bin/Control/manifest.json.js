@@ -33,11 +33,11 @@ module.exports = {
             "HMI": {
                 "mandatory": true,
                 "version": "~1.0.0"
-            }
+            },
             "Formatting": {
                 "mandatory": true,
                 "version": "~1.0.0"
-            }
+            },
             "Dialogues": {
                 "mandatory": true,
                 "version": "~1.0.0"
