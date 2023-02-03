@@ -15,7 +15,7 @@ with nodejs `$ npm -g i wincc-cli`
 
 - ### Compiler CWC to TIA Portal MyControls project:
     - `$npx wincc-cli build-cwc`
-    - Copy `.zip` file to your TIA portal porject.
+    - Copy `.zip` file to your TIA portal project in folder `<project name>/UserFiles/CustomControls`.
 
 
 ## Author

@@ -13,7 +13,7 @@ function build_cwc(){
          fs.readFile(`${root}/dist/manifest.json`,(err, data)=>{
             const manifest = JSON.parse(data);
             const guid = manifest.control.identity.type.split("//")[1];
-            zip(`${root}/dist`, `${root}/{${guid}}.zip`)
+            zip(`${root}/dist`, `${root}/{${guid}}.zip`);
          });
        }
     })

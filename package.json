@@ -1,6 +1,6 @@
 {
   "name": "wincc-cli",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "custom web control generator for WinCC ",
   "main": "index.js",
   "scripts": {
